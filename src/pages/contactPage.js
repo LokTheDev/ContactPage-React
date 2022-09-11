@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import { Content } from "../components/Content/Content";
 import Hero from "../components/Hero/Hero";
-import { getUsers } from "../data/data";
+import { styledDiv } from './ContactPageStyles';
 
 function ContactPage() {
 
@@ -30,7 +30,7 @@ function ContactPage() {
     const content = isLoading ? {isLoading: true} : users
 
     return (
-      <div>
+      <styledDiv>
         <img src="../assets/logo.png" alt="Logo" />
         <Hero />
         {users.map((user,key) => {
@@ -38,7 +38,7 @@ function ContactPage() {
             <Content data={user} key={key}/>
         );
       })}
-      </div>
+      </styledDiv>
     );
 }
 
