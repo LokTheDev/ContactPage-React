@@ -31,7 +31,7 @@ function ContactPage() {
 
     return (
       <styledDiv>
-        <img src="../assets/logo.png" alt="Logo" />
+        <img src="./assets/logo.png" alt="Logo" />
         <Hero />
         {users.map((user,key) => {
         return (
